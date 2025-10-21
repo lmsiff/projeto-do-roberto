@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif
+}
+
+header {
+  border-bottom: 1px solid #D3D4D9;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+
+.main-logo {
+  max-width: 35px;
+  height: 35px;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.header__link a {
+  color: #333;
+  font-weight: 500;
+}
+
+.container--grid {
+  column-count: 3;       
+  column-gap: 16px;    
+  margin-top: 30px;
+}
+
+.adotion-card {
+  break-inside: avoid;     
+  margin-bottom: 16px;
+  width: 100%;
+   cursor: pointer;
+}
+
+.adotion-card img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out
+}
+
+.adotion-card img:hover {
+  transform: scale(1.03);
+}
+
+.adotion-modal__backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.adotion-modal {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.adotion-modal img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.adotion-modal__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.adotion-modal a {
+  background-color: #34a9cd;
+  color: #013140;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
